@@ -1,0 +1,99 @@
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.about-card {
+  width: 80%;
+  max-width: 800px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.about-card h2 {
+  color: #ff3737;
+  text-align: center;
+}
+
+.about-card p {
+  font-size: 16px;
+  color: #333333;
+  line-height: 1.6;
+}
+
+.developer-card {
+  width: 80%;
+  max-width: 600px; /* Adjusted width for desktop */
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-left: 50px;
+}
+
+.developer-info {
+  flex: 1;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.role {
+  font-size: 18px;
+  color: #666666;
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  align-items: right; /* Center items vertically */
+  margin-left: 11rem; /* Added margin */
+}
+
+.social-logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px; /* Adjusted margin between logos */
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .about-card {
+    width: 90%;
+  }
+
+  .developer-card {
+    width: 90%;
+  }
+
+  .profile-pic {
+    margin: 0 0 10px 0;
+  }
+
+  .developer-info {
+    text-align: center;
+  }
+
+  .social-links {
+    flex-direction: row; /* Ensure logos are in a row for mobile */
+    justify-content: left; /* Center logos horizontally */
+    margin-left: 5rem; /* Adjust margin */
+  }
+}

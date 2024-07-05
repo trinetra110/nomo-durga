@@ -1,0 +1,37 @@
+@media (min-width: 769px) {
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .navbar-links-desktop {
+    display: flex;
+  }
+
+  .navbar-links-desktop a {
+    margin-right: 20px; /* Add space between links */
+  }
+
+  .navbar-links-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .navbar-links-desktop {
+    display: none;
+  }
+
+  .navbar-links-mobile {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+  }
+
+  .navbar-links-mobile a {
+    margin: 0 10px;
+  }
+}

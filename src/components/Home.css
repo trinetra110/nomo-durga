@@ -1,0 +1,70 @@
+/* Other existing styles */
+
+.list-city-map-section {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.list-city-map-card {
+  width: 80%;
+  max-width: 800px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.list-city-map-card h2 {
+  color: #ff3737;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.list-city-map-card .content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.left-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 12%;
+}
+
+.pdf-button {
+  background-color: #ff3737;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.left-content p {
+  font-size: 16px;
+  color: #333333;
+}
+
+.right-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .list-city-map-card .content {
+    flex-direction: column;
+  }
+
+  .left-content {
+    margin-bottom: 20px;
+  }
+}
